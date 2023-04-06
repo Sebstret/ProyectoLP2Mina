@@ -17,4 +17,26 @@ class Vendedor extends Usuario{
 		this.productos=productos;
 	}
 
+	@Override
+	public String consultarDatos(){
+		// Se consultan los datos del vendedor
+	}
+	
+	public void registrarProducto(Producto producto){
+	}
+	
+	public int buscarProducto(){
+	}
+	
+	public void actualizarProducto(int idProducto){
+	}
+	
+	public void eliminarProducto(){
+	}
+	
+	public String emitirReporteDetallesVentas(){
+	}
+	
+	public void gestionarPedidos(){
+	}
 }
