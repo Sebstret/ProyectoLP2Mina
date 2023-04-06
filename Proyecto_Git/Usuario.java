@@ -1,4 +1,4 @@
-class Usuario{
+abstract class Usuario implements IConsultable{
 	private int idUsuario;
 	private int DNI;
 	private String nombre;
@@ -17,5 +17,6 @@ class Usuario{
 		this.telefono = telefono;
 		this.activo= activo;
 	}
-
+	
+	public abstract consultarDatos();
 }
