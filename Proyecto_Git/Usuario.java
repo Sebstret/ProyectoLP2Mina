@@ -1,4 +1,4 @@
-class Usuario{
+abstract class Usuario implements IConsultable{
 	private int idUsuario;
 	private int DNI;
 	private String nombre;
@@ -16,6 +16,25 @@ class Usuario{
 		this.contraseña=contraseña;
 		this.telefono = telefono;
 		this.activo= activo;
+	}
+	
+	public abstract String consultarDatos();
+	
+	public abstract void editarUsuario();
+	
+	public abstract void consultarHistorial();
+	
+	public abstract void consultarDatosPersonales();
+	
+	public abstract void editarDatosPersonales();
+	
+	public void iniciarSesion(){
+	}
+	
+	public void cerrarSesion(){
+	}
+	
+	public void cambiarContraseña(String contraseña){
 	}
 
 }
