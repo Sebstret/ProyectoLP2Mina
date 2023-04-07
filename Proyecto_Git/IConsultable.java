@@ -1,3 +1,5 @@
 interface IConsultable{
-  String consultarDatos();
+  String consultarDatosPersonales();
+  void editarDatosPersonales();
+  void consultarHistorial();
 }
